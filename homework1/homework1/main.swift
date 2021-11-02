@@ -49,14 +49,18 @@ func strongReadLine(_ text: String) -> String {
     }
 }
 
+func getBody() -> Car.Body {
+    Car.Body.printBodyTypes()
+    let bodyIndex = Int(strongReadLine("")) ?? -1
+    let body = Car.Body.getBodyType(bodyIndex)
+    return body
+}
 
 func carAdd() {
     let manufacturer = strongReadLine("Введите производителя:")
     let model = strongReadLine("Введите модель автомобиля:")
     
-    Car.Body.printBodyTypes()
-    let bodyIndex = Int(strongReadLine("")) ?? 3
-    let body = Car.Body.getBodyType(bodyIndex)
+    let body = getBody()
     
     print("Введите год выпуска автомобиля (необязательно) :")
     let yearOfIssue = Int(readLine() ?? "-")
@@ -89,9 +93,7 @@ func printAllCars(cars: [Car]) {
 }
 
 func printFilteredCars() {
-    Car.Body.printBodyTypes()
-    let bodyIndex = Int(strongReadLine("")) ?? 3
-    let body = Car.Body.getBodyType(bodyIndex)
+    let body = getBody()
     let filteredCars = cars.filter { $0.body == body }
     print("Представлен список автомобилей по кузову - \(body.rawValue)")
     printAllCars(cars: filteredCars)
