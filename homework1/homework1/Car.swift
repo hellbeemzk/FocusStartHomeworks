@@ -29,5 +29,20 @@ struct Car {
                 print("\(num) - \(body.rawValue)")
             }
         }
+        
+        static func getBodyType() -> Car.Body {
+            let bodyIndex = strongReadLine("")
+            switch bodyIndex {
+            case "0":
+                return .sedan
+            case "1":
+                return .coupe
+            case "2":
+                return .hatchback
+            default:
+                print("Выбран неопределенный тип кузова")
+                return .unkown
+            }
+        }
     }
 }

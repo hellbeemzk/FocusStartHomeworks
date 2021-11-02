@@ -55,7 +55,7 @@ func carAdd() {
     let model = strongReadLine("Введите модель автомобиля:")
     
     Car.Body.printBodyTypes()
-    let body = getBodyType()
+    let body = Car.Body.getBodyType()
     
     print("Введите год выпуска автомобиля (необязательно) :")
     let yearOfIssue = Int(readLine() ?? "-")
@@ -76,7 +76,6 @@ func carAdd() {
 func printAllCars(cars: [Car]) {
     if cars.isEmpty {
         print("Список автомобилей пуст")
-        startMenu()
     }
     
     for car in cars {
@@ -90,24 +89,10 @@ func printAllCars(cars: [Car]) {
 
 func printFilteredCars() {
     Car.Body.printBodyTypes()
-    let body = getBodyType()
+    let body = Car.Body.getBodyType()
     let filteredCars = cars.filter { $0.body == body }
     print("Представлен список автомобилей по кузову - \(body.rawValue)")
     printAllCars(cars: filteredCars)
 }
 
-func getBodyType() -> Car.Body {
-    let bodyIndex = strongReadLine("")
-    switch bodyIndex {
-    case "0":
-        return .sedan
-    case "1":
-        return .coupe
-    case "2":
-        return .hatchback
-    default:
-        print("Выбран неопределенный тип кузова")
-        return .unkown
-    }
-}
 
