@@ -30,14 +30,13 @@ struct Car {
             }
         }
         
-        static func getBodyType() -> Car.Body {
-            let bodyIndex = strongReadLine("")
-            switch bodyIndex {
-            case "0":
+        static func getBodyType(_ bodyType: Int) -> Car.Body {
+            switch bodyType {
+            case 0:
                 return .sedan
-            case "1":
+            case 1:
                 return .coupe
-            case "2":
+            case 2:
                 return .hatchback
             default:
                 print("Выбран неопределенный тип кузова")
