@@ -9,54 +9,48 @@ import Foundation
 
 class ThreadSafeArray<Type: Equatable> {
     
-    private var safeArray = [Type]()
+    private var array = [Type]()
     private var concurrentQueue = DispatchQueue(label: "MyConcurrentQueue", attributes: .concurrent)
     
     var isEmpty: Bool {
         var resultOfEmpty = false
         concurrentQueue.sync {
-            resultOfEmpty = safeArray.isEmpty
+            resultOfEmpty = array.isEmpty
         }
         return resultOfEmpty
     }
     
     var count: Int {
-        get {
-            var resultOfCount = 0
-            concurrentQueue.sync {
-                resultOfCount = safeArray.count
-            }
-            return resultOfCount
+        var resultOfCount = 0
+        concurrentQueue.sync {
+            resultOfCount = array.count
         }
+        return resultOfCount
     }
     
     func append(_ item: Type) {
         self.concurrentQueue.async(flags: .barrier) {
-            self.safeArray.append(item)
+            self.array.append(item)
         }
     }
     
     func remove(at index: Int) {
         self.concurrentQueue.async(flags: .barrier) {
-            if index < self.safeArray.count, index >= 0 {
-            self.safeArray.remove(at: index)
+            if index < self.array.count, index >= 0 {
+                self.array.remove(at: index)
             }
         }
     }
     
-    subscript(index: Int) -> Type? {
-        var item: Type?
+    subscript(index: Int) -> Type {
         self.concurrentQueue.sync {
-            if index < self.safeArray.count, index >= 0 {
-                item = self.safeArray[index]
-            }
+            return self.array[index]
         }
-        return item
     }
     
     func contains(_ element: Type) -> Bool {
         self.concurrentQueue.sync {
-            return self.safeArray.contains(element)
+            return self.array.contains(element)
         }
     }
     

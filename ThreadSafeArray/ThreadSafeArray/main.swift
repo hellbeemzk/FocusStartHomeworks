@@ -35,9 +35,10 @@ testQueue.async {
 
 testDispatchGroup.wait()
 
-testDispatchGroup.notify(queue: testQueue) {
-    print()
-    print("Array is empty? \(testArray.isEmpty)")
-    print("Array has \(testArray.count) items AFTER append items")
-}
+print()
+print("Array is empty? \(testArray.isEmpty)")
+print("Array has \(testArray.count) items AFTER append items")
+
+
+
 
