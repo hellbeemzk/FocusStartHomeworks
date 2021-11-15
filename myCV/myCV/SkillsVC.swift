@@ -41,19 +41,19 @@ final class SkillsVC: UIViewController {
 
 private extension SkillsVC {
     
-    private func setViews() {
+    func setViews() {
         view.addSubview(avatarImage)
         view.addSubview(skillsText)
         view.addSubview(mySwitch)
     }
-
-    private func setConstraints() {
+    
+    func setConstraints() {
         self.setAvatarConstraints()
         self.setSkillsConstraints()
         self.setSwitchConstraints()
     }
     
-    private func setAvatarConstraints() {
+    func setAvatarConstraints() {
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             avatarImage.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 2/3),
@@ -63,7 +63,7 @@ private extension SkillsVC {
         ])
     }
     
-    private func setSkillsConstraints() {
+    func setSkillsConstraints() {
         skillsText.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             skillsText.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 4/5),
@@ -72,17 +72,15 @@ private extension SkillsVC {
         ])
     }
     
-    private func setSwitchConstraints() {
+    func setSwitchConstraints() {
         mySwitch.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-//            mySwitch.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/8),
-//            mySwitch.topAnchor.constraint(equalTo: avatarImage.bottomAnchor, constant: 300),
             mySwitch.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -5),
             mySwitch.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
     
-    private func switchContent() {
+    func switchContent() {
         if mySwitch.isOn {
             skillsText.text = Constants.skillsDescription
             avatarImage.image = UIImage(named: "ava6")
@@ -94,7 +92,7 @@ private extension SkillsVC {
     }
     
     @objc
-    private func switchDidChanged(_ sender: UISwitch) {
+    func switchDidChanged(_ sender: UISwitch) {
         if (sender.isOn == true) {
             skillsText.text = Constants.skillsDescription
             avatarImage.image = UIImage(named: "ava6")
@@ -104,7 +102,7 @@ private extension SkillsVC {
         }
     }
     
-    private func setBackgroundImage() {
+    func setBackgroundImage() {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "bg2")
         backgroundImage.contentMode = .scaleAspectFill
