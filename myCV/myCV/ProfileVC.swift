@@ -44,19 +44,19 @@ final class ProfileVC: UIViewController {
 
 private extension ProfileVC {
     
-    func setViews() {
+    private func setViews() {
         view.addSubview(avatarImageView)
         view.addSubview(profileName)
         view.addSubview(profileText)
     }
     
-    func setConstraints() {
+    private func setConstraints() {
         self.setAvatarConstraints()
         self.setNameConstraints()
         self.setTextConstraints()
     }
     
-    func setAvatarConstraints() {
+    private func setAvatarConstraints() {
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             avatarImageView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 2/3),
@@ -66,7 +66,7 @@ private extension ProfileVC {
         ])
     }
     
-    func setNameConstraints() {
+    private func setNameConstraints() {
         profileName.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             profileName.topAnchor.constraint(equalTo: avatarImageView.bottomAnchor, constant: 30),
@@ -74,7 +74,7 @@ private extension ProfileVC {
         ])
     }
     
-    func setTextConstraints() {
+    private func setTextConstraints() {
         profileText.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             profileText.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 4/5),
@@ -83,7 +83,7 @@ private extension ProfileVC {
         ])
     }
 
-    func setBackgroundImage() {
+    private func setBackgroundImage() {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "bg2")
         backgroundImage.contentMode = .scaleAspectFill

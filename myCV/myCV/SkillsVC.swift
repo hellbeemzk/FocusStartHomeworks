@@ -41,19 +41,19 @@ final class SkillsVC: UIViewController {
 
 private extension SkillsVC {
     
-    func setViews() {
+    private func setViews() {
         view.addSubview(avatarImage)
         view.addSubview(skillsText)
         view.addSubview(mySwitch)
     }
 
-    func setConstraints() {
+    private func setConstraints() {
         self.setAvatarConstraints()
         self.setSkillsConstraints()
         self.setSwitchConstraints()
     }
     
-    func setAvatarConstraints() {
+    private func setAvatarConstraints() {
         avatarImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             avatarImage.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 2/3),
@@ -63,7 +63,7 @@ private extension SkillsVC {
         ])
     }
     
-    func setSkillsConstraints() {
+    private func setSkillsConstraints() {
         skillsText.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             skillsText.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 4/5),
@@ -72,7 +72,7 @@ private extension SkillsVC {
         ])
     }
     
-    func setSwitchConstraints() {
+    private func setSwitchConstraints() {
         mySwitch.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
 //            mySwitch.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 1/8),
@@ -82,7 +82,7 @@ private extension SkillsVC {
         ])
     }
     
-    func switchContent() {
+    private func switchContent() {
         if mySwitch.isOn {
             skillsText.text = Constants.skillsDescription
             avatarImage.image = UIImage(named: "ava6")
@@ -94,7 +94,7 @@ private extension SkillsVC {
     }
     
     @objc
-    func switchDidChanged(_ sender: UISwitch) {
+    private func switchDidChanged(_ sender: UISwitch) {
         if (sender.isOn == true) {
             skillsText.text = Constants.skillsDescription
             avatarImage.image = UIImage(named: "ava6")
@@ -104,7 +104,7 @@ private extension SkillsVC {
         }
     }
     
-    func setBackgroundImage() {
+    private func setBackgroundImage() {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "bg2")
         backgroundImage.contentMode = .scaleAspectFill

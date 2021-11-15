@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 private extension SceneDelegate {
-    func createTabBarController() -> UITabBarController {
+    private func createTabBarController() -> UITabBarController {
         let tabBar = UITabBarController()
         let profileVC = ProfileVC()
         let skillsVC = SkillsVC()
@@ -40,17 +40,17 @@ private extension SceneDelegate {
         return tabBar
     }
 
-    func createFirstTab() -> UITabBarItem {
+    private func createFirstTab() -> UITabBarItem {
         let item = UITabBarItem(title: "Обо мне", image: UIImage(systemName: "person.circle"), tag: 0)
         return item
     }
 
-    func createSecondTab() -> UITabBarItem {
+    private func createSecondTab() -> UITabBarItem {
         let item = UITabBarItem(title: "Опыт", image: UIImage(systemName: "folder.circle"), tag: 1)
         return item
     }
 
-    func createThirdTab() -> UITabBarItem {
+    private func createThirdTab() -> UITabBarItem {
         let item = UITabBarItem(title: "Хобби", image: UIImage(systemName: "flame.circle"), tag: 2)
         return item
     }

@@ -42,13 +42,13 @@ final class HobbyVC: UIViewController {
 
 private extension HobbyVC {
     
-    func setConstraints() {
+    private func setConstraints() {
         self.setHobbyImageConstraints()
         self.setSegmentConstraints()
         self.setHobbyTextConstraints()
     }
     
-    func configureSegmentedControl() {
+    private func configureSegmentedControl() {
         let segments = ["Football", "Snowboarding"]
         segmentedControl = UISegmentedControl(items: segments)
         segmentedControl.selectedSegmentIndex = 0
@@ -58,7 +58,7 @@ private extension HobbyVC {
     }
     
     @objc
-    func segmentDidChanged(_ sender: UISegmentedControl) {
+    private func segmentDidChanged(_ sender: UISegmentedControl) {
         switch (sender.selectedSegmentIndex) {
         case 0:
             hobbyImage.image = UIImage(named: "football")
@@ -69,7 +69,7 @@ private extension HobbyVC {
         }
     }
     
-    func setSegmentConstraints() {
+    private func setSegmentConstraints() {
         segmentedControl.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             segmentedControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -79,13 +79,13 @@ private extension HobbyVC {
         ])
     }
     
-    func setViews() {
+    private func setViews() {
         view.addSubview(hobbyImage)
         view.addSubview(segmentedControl)
         view.addSubview(hobbyText)
     }
     
-    func setHobbyImageConstraints() {
+    private func setHobbyImageConstraints() {
         hobbyImage.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             hobbyImage.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 4/6),
@@ -95,7 +95,7 @@ private extension HobbyVC {
         ])
     }
     
-    func setHobbyTextConstraints() {
+    private func setHobbyTextConstraints() {
         hobbyText.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             hobbyText.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 4/5),
@@ -104,7 +104,7 @@ private extension HobbyVC {
         ])
     }
     
-    func setBackgroundImage() {
+    private func setBackgroundImage() {
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "bg2")
         backgroundImage.contentMode = .scaleAspectFill
