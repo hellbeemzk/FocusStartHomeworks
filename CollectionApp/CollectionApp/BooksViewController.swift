@@ -32,7 +32,6 @@ private extension BooksViewController {
         collectionView.dataSource = self
     }
     
-    
     func createLayout() -> UICollectionViewCompositionalLayout {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
                                               heightDimension: .fractionalHeight(1.0))
@@ -58,11 +57,11 @@ extension BooksViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
         cell.book = Book.arrayBooks[indexPath.item]
         return cell
-        
     }
 }
 
 extension BooksViewController: UICollectionViewDelegate {
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailVC = DetailViewController()
         detailVC.book = Book.arrayBooks[indexPath.item]
