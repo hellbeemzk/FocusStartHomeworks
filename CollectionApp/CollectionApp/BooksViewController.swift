@@ -33,15 +33,15 @@ private extension BooksViewController {
     }
     
     func createLayout() -> UICollectionViewCompositionalLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .fractionalHeight(1.0))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(Constants.fractionalWidthForItemSize),
+                                              heightDimension: .fractionalHeight(Constants.fractionalHeightForItemSize))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         item.contentInsets = NSDirectionalEdgeInsets(top: Constants.contentInsetsBooksVC, leading: Constants.contentInsetsBooksVC, bottom: Constants.contentInsetsBooksVC, trailing: Constants.contentInsetsBooksVC)
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(Constants.fractionalWidthForGroupSize),
                                                heightDimension: .absolute(Constants.heightDimensionGroupSize))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: Constants.contentInsetsForTopSecctionBooksVC, leading: 0, bottom: 0, trailing: 0)
+        section.contentInsets = NSDirectionalEdgeInsets(top: Constants.contentInsetsForTopSecctionBooksVC, leading: Constants.contentInsetsForSection, bottom: Constants.contentInsetsForSection, trailing: Constants.contentInsetsForSection)
         let layout = UICollectionViewCompositionalLayout(section: section)
         return layout
     }

@@ -19,4 +19,8 @@ enum Constants {
     static let multiplierForImageWidthCell: CGFloat = 1/6
     static let indentForNameCell: CGFloat = 5
     static let indentForButtonBottomModalVC: CGFloat = -30
+    static let fractionalWidthForItemSize: CGFloat = 1
+    static let fractionalHeightForItemSize: CGFloat = 1
+    static let fractionalWidthForGroupSize: CGFloat = 1
+    static let contentInsetsForSection: CGFloat = 0
 }

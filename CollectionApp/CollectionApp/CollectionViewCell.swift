@@ -55,7 +55,7 @@ final class CollectionViewCell: UICollectionViewCell {
         
         NSLayoutConstraint.activate([
             imageBook.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            imageBook.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
+            imageBook.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             imageBook.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: Constants.multiplierForImageWidthCell),
             imageBook.heightAnchor.constraint(equalTo: self.heightAnchor)
         ])
