@@ -15,6 +15,7 @@
 		B56FEC0C2749DD3B0057867A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56FEC0B2749DD3B0057867A /* Book.swift */; };
 		B5A174B5274BD2390001BDED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A174B4274BD2390001BDED /* Constants.swift */; };
 		B5A174B7274BD3100001BDED /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A174B6274BD3100001BDED /* CollectionViewCell.swift */; };
+		B5A174B9274BD4180001BDED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A174B8274BD4180001BDED /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B56FEC0B2749DD3B0057867A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		B5A174B4274BD2390001BDED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B5A174B6274BD3100001BDED /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		B5A174B8274BD4180001BDED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				B56FEC0A2749DA0C0057867A /* Application */,
 				B56FEBFA2749D2D90057867A /* BooksViewController.swift */,
+				B5A174B8274BD4180001BDED /* DetailViewController.swift */,
 				B5A174B6274BD3100001BDED /* CollectionViewCell.swift */,
 				B56FEC0B2749DD3B0057867A /* Book.swift */,
 				B5A174B4274BD2390001BDED /* Constants.swift */,
@@ -157,6 +160,7 @@
 				B56FEBFB2749D2D90057867A /* BooksViewController.swift in Sources */,
 				B56FEBF72749D2D90057867A /* AppDelegate.swift in Sources */,
 				B56FEBF92749D2D90057867A /* SceneDelegate.swift in Sources */,
+				B5A174B9274BD4180001BDED /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
