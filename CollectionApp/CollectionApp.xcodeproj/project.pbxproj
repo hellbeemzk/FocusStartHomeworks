@@ -14,6 +14,7 @@
 		B56FEC032749D2DA0057867A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56FEC012749D2DA0057867A /* LaunchScreen.storyboard */; };
 		B56FEC0C2749DD3B0057867A /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56FEC0B2749DD3B0057867A /* Book.swift */; };
 		B5A174B5274BD2390001BDED /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A174B4274BD2390001BDED /* Constants.swift */; };
+		B5A174B7274BD3100001BDED /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A174B6274BD3100001BDED /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B56FEC042749D2DA0057867A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B56FEC0B2749DD3B0057867A /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		B5A174B4274BD2390001BDED /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B5A174B6274BD3100001BDED /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				B56FEC0A2749DA0C0057867A /* Application */,
 				B56FEBFA2749D2D90057867A /* BooksViewController.swift */,
+				B5A174B6274BD3100001BDED /* CollectionViewCell.swift */,
 				B56FEC0B2749DD3B0057867A /* Book.swift */,
 				B5A174B4274BD2390001BDED /* Constants.swift */,
 				B56FEBFF2749D2DA0057867A /* Assets.xcassets */,
@@ -150,6 +153,7 @@
 			files = (
 				B5A174B5274BD2390001BDED /* Constants.swift in Sources */,
 				B56FEC0C2749DD3B0057867A /* Book.swift in Sources */,
+				B5A174B7274BD3100001BDED /* CollectionViewCell.swift in Sources */,
 				B56FEBFB2749D2D90057867A /* BooksViewController.swift in Sources */,
 				B56FEBF72749D2D90057867A /* AppDelegate.swift in Sources */,
 				B56FEBF92749D2D90057867A /* SceneDelegate.swift in Sources */,
