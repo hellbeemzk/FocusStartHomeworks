@@ -73,16 +73,11 @@
 			isa = PBXGroup;
 			children = (
 				B54633F4275751DB0079DAC6 /* Application */,
-				B54633E4275751010079DAC6 /* BooksViewController.swift */,
-				B54633F5275752460079DAC6 /* BooksView.swift */,
-				B54633F7275752700079DAC6 /* CollectionViewCell.swift */,
-				B54633FD275753AF0079DAC6 /* DetailViewController.swift */,
-				B54633FF275753C90079DAC6 /* DetailView.swift */,
-				B5463401275753ED0079DAC6 /* DetailPresenter.swift */,
-				B5463403275754C00079DAC6 /* ModalViewController.swift */,
-				B5463405275754F10079DAC6 /* ModalViewModel.swift */,
-				B54633FB275752E10079DAC6 /* ModelBook.swift */,
-				B54633F9275752A60079DAC6 /* Metrics.swift */,
+				B5463409275755630079DAC6 /* BooksScreen - MVC */,
+				B546340C275755BD0079DAC6 /* DetailScreen - MVP */,
+				B546340F275755E40079DAC6 /* ModalScreen - MVVM */,
+				B5463410275755F70079DAC6 /* Model */,
+				B5463411275755FE0079DAC6 /* Metrics */,
 				B54633E9275751020079DAC6 /* Assets.xcassets */,
 				B54633EB275751020079DAC6 /* LaunchScreen.storyboard */,
 				B54633EE275751020079DAC6 /* Info.plist */,
@@ -97,6 +92,99 @@
 				B54633E2275751010079DAC6 /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		B5463407275755490079DAC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B54633F5275752460079DAC6 /* BooksView.swift */,
+				B54633F7275752700079DAC6 /* CollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5463408275755570079DAC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B54633E4275751010079DAC6 /* BooksViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B5463409275755630079DAC6 /* BooksScreen - MVC */ = {
+			isa = PBXGroup;
+			children = (
+				B5463407275755490079DAC6 /* View */,
+				B5463408275755570079DAC6 /* Controller */,
+			);
+			path = "BooksScreen - MVC";
+			sourceTree = "<group>";
+		};
+		B546340A275755840079DAC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B54633FD275753AF0079DAC6 /* DetailViewController.swift */,
+				B54633FF275753C90079DAC6 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B546340B275755AB0079DAC6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B5463401275753ED0079DAC6 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B546340C275755BD0079DAC6 /* DetailScreen - MVP */ = {
+			isa = PBXGroup;
+			children = (
+				B546340A275755840079DAC6 /* View */,
+				B546340B275755AB0079DAC6 /* Presenter */,
+			);
+			path = "DetailScreen - MVP";
+			sourceTree = "<group>";
+		};
+		B546340D275755D30079DAC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5463403275754C00079DAC6 /* ModalViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B546340E275755DB0079DAC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B5463405275754F10079DAC6 /* ModalViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B546340F275755E40079DAC6 /* ModalScreen - MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				B546340D275755D30079DAC6 /* View */,
+				B546340E275755DB0079DAC6 /* ViewModel */,
+			);
+			path = "ModalScreen - MVVM";
+			sourceTree = "<group>";
+		};
+		B5463410275755F70079DAC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B54633FB275752E10079DAC6 /* ModelBook.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B5463411275755FE0079DAC6 /* Metrics */ = {
+			isa = PBXGroup;
+			children = (
+				B54633F9275752A60079DAC6 /* Metrics.swift */,
+			);
+			path = Metrics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
