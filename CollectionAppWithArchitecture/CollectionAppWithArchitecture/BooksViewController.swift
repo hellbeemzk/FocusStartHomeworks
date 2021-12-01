@@ -40,10 +40,10 @@ extension BooksViewController: UICollectionViewDataSource {
 
 extension BooksViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let detailVC = DetailViewController()
-//        detailVC.indexBook = indexPath.item
-//        detailVC.detailPresenter.indexBook = indexPath.item
-//        self.navigationController?.pushViewController(detailVC, animated: true)
+        let detailVC = DetailViewController()
+        detailVC.indexBook = indexPath.item
+        detailVC.detailPresenter.indexBook = indexPath.item
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 
