@@ -37,11 +37,11 @@ final class DetailViewController: UIViewController {
 
 extension DetailViewController {
         
-//    func presentModalScreen() {
-//        let modalVC = ModalViewController()
-//        modalVC.viewModel.indexBook = indexBook
-//        self.present(modalVC, animated: true, completion: nil)
-//    }
+    func presentModalScreen() {
+        let modalVC = ModalViewController()
+        modalVC.viewModel.indexBook = indexBook
+        self.present(modalVC, animated: true, completion: nil)
+    }
 }
     
     

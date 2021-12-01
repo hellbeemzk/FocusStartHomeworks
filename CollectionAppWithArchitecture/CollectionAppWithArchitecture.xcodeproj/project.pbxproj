@@ -19,6 +19,8 @@
 		B54633FE275753AF0079DAC6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54633FD275753AF0079DAC6 /* DetailViewController.swift */; };
 		B5463400275753C90079DAC6 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54633FF275753C90079DAC6 /* DetailView.swift */; };
 		B5463402275753ED0079DAC6 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5463401275753ED0079DAC6 /* DetailPresenter.swift */; };
+		B5463404275754C00079DAC6 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5463403275754C00079DAC6 /* ModalViewController.swift */; };
+		B5463406275754F10079DAC6 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5463405275754F10079DAC6 /* ModalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B54633FD275753AF0079DAC6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		B54633FF275753C90079DAC6 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		B5463401275753ED0079DAC6 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		B5463403275754C00079DAC6 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		B5463405275754F10079DAC6 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				B54633FD275753AF0079DAC6 /* DetailViewController.swift */,
 				B54633FF275753C90079DAC6 /* DetailView.swift */,
 				B5463401275753ED0079DAC6 /* DetailPresenter.swift */,
+				B5463403275754C00079DAC6 /* ModalViewController.swift */,
+				B5463405275754F10079DAC6 /* ModalViewModel.swift */,
 				B54633FB275752E10079DAC6 /* ModelBook.swift */,
 				B54633F9275752A60079DAC6 /* Metrics.swift */,
 				B54633E9275751020079DAC6 /* Assets.xcassets */,
@@ -166,10 +172,12 @@
 				B54633E5275751010079DAC6 /* BooksViewController.swift in Sources */,
 				B5463400275753C90079DAC6 /* DetailView.swift in Sources */,
 				B54633FA275752A60079DAC6 /* Metrics.swift in Sources */,
+				B5463404275754C00079DAC6 /* ModalViewController.swift in Sources */,
 				B5463402275753ED0079DAC6 /* DetailPresenter.swift in Sources */,
 				B54633E1275751010079DAC6 /* AppDelegate.swift in Sources */,
 				B54633E3275751010079DAC6 /* SceneDelegate.swift in Sources */,
 				B54633F6275752460079DAC6 /* BooksView.swift in Sources */,
+				B5463406275754F10079DAC6 /* ModalViewModel.swift in Sources */,
 				B54633F8275752700079DAC6 /* CollectionViewCell.swift in Sources */,
 				B54633FC275752E10079DAC6 /* ModelBook.swift in Sources */,
 				B54633FE275753AF0079DAC6 /* DetailViewController.swift in Sources */,

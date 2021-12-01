@@ -19,7 +19,7 @@ final class DetailPresenter {
         self.detailView?.configureViews()
         self.setBook()
         self.setContentOnView()
-//        self.setHandlers()
+        self.setHandlers()
     }
     
     private func setBook() {
@@ -37,10 +37,10 @@ final class DetailPresenter {
         self.detailView?.setDescriptionBook(name: "Книга - \(nameBook). Автор: \(author). Жанр: \(genre).")
     }
     
-//    private func setHandlers() {
-//        self.detailView?.onTouchedHandler = { [weak self] in
-//            self?.detailController?.presentModalScreen()
-//        }
-//    }
+    private func setHandlers() {
+        self.detailView?.onTouchedHandler = { [weak self] in
+            self?.detailController?.presentModalScreen()
+        }
+    }
 }
 
