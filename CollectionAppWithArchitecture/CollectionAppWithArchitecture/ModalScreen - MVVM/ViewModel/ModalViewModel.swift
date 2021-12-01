@@ -31,7 +31,6 @@ final class ViewModel {
     var data: Observable<String> = Observable<String>("Оценка выше всяких похвал, но если точнее... ")
     var delayRandomTime = DispatchTimeInterval.seconds(Int.random(in: 1..<5))
     
-    
     init() {
         self.updateModel()
     }
