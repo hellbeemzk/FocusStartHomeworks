@@ -27,15 +27,18 @@ final class Observable<T> {
 }
 
 final class ViewModel {
-    var indexBook: Int?
-    var data: Observable<String> = Observable<String>("Оценка выше всяких похвал, но если точнее... ")
-    var delayRandomTime = DispatchTimeInterval.seconds(Int.random(in: 1..<5))
     
-    init() {
+    private var indexBook: Int?
+    
+    init(index: Int) {
+        self.indexBook = index
         self.updateModel()
     }
+
+    var data: Observable<String> = Observable<String>("Оценка выше всяких похвал, но если точнее... ")
+    private var delayRandomTime = DispatchTimeInterval.seconds(Int.random(in: 1..<5))
     
-    func updateModel() {
+    private func updateModel() {
         DispatchQueue.main.asyncAfter(deadline: .now() + delayRandomTime) { [weak self] in
             if let index = self?.indexBook {
                 self?.data.data = "Оценка книги по рейтингу портала LiveLib - " + ModelBook.getBook(from: index).rating

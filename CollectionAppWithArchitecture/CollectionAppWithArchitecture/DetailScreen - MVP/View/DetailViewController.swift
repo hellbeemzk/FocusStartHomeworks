@@ -10,13 +10,14 @@ import UIKit
 final class DetailViewController: UIViewController {
     
     private let detailView: DetailView
-    let detailPresenter: DetailPresenter
+    private let detailPresenter: DetailPresenter
     
-    var indexBook: Int?
+    private var indexBook: Int
     
-    init() {
+    init(indexBook: Int) {
         self.detailView = DetailView(frame: UIScreen.main.bounds)
-        self.detailPresenter = DetailPresenter()
+        self.detailPresenter = DetailPresenter(indexBook: indexBook)
+        self.indexBook = indexBook
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -38,8 +39,7 @@ final class DetailViewController: UIViewController {
 extension DetailViewController {
         
     func presentModalScreen() {
-        let modalVC = ModalViewController()
-        modalVC.viewModel.indexBook = indexBook
+        let modalVC = ModalViewController(indexBook: indexBook)
         self.present(modalVC, animated: true, completion: nil)
     }
 }

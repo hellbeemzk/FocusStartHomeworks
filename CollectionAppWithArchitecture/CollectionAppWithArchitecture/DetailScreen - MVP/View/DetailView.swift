@@ -45,16 +45,21 @@ final class DetailView: UIView {
         self.addSubview(imageBook)
         self.addSubview(descriptionLabel)
         self.addSubview(buttonRatingBook)
-        setupLayoutImageBook()
-        setupLayoutDescription()
-        setupLayoutButton()
+        self.setupLayoutImageBook()
+        self.setupLayoutDescription()
+        self.setupLayoutButton()
     }
     
-    func setDescriptionBook(name: String) {
-        self.descriptionLabel.text = name
+    func setContent(book: Book) { 
+        self.setDescriptionBook(desc: "Книга - \(book.name). Автор: \(book.author). Жанр: \(book.genre).")
+        self.setImageBook(image: book.image)
     }
     
-    func setImageBook(image: String) {
+    private func setDescriptionBook(desc: String) {
+        self.descriptionLabel.text = desc
+    }
+    
+    private func setImageBook(image: String) {
         self.imageBook.image = UIImage(named: image)
     }
     

@@ -9,7 +9,16 @@ import UIKit
 
 final class ModalViewController: UIViewController {
     
-    let viewModel = ViewModel()
+    private let viewModel: ViewModel
+    
+    init(indexBook: Int) {
+        self.viewModel = ViewModel(index: indexBook)
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private lazy var ratingLabel : UILabel = {
         let label = UILabel()
@@ -32,8 +41,8 @@ final class ModalViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureViews()
-        setRatingLabel()
+        self.configureViews()
+        self.setRatingLabel()
     }
 }
 
@@ -43,8 +52,8 @@ private extension ModalViewController {
         view.backgroundColor = .white
         view.addSubview(buttonToBack)
         view.addSubview(ratingLabel)
-        setupButtonLayout()
-        setupRatingLabelLayout()
+        self.setupButtonLayout()
+        self.setupRatingLabelLayout()
     }
     
     func setRatingLabel() {
@@ -58,7 +67,7 @@ private extension ModalViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func setupButtonLayout() {
+    private func setupButtonLayout() {
         NSLayoutConstraint.activate([
             buttonToBack.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             buttonToBack.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: Metrics.indentForButtonBottomModalVC),
@@ -66,7 +75,7 @@ private extension ModalViewController {
         ])
     }
     
-    func setupRatingLabelLayout() {
+    private func setupRatingLabelLayout() {
         NSLayoutConstraint.activate([
             ratingLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             ratingLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),

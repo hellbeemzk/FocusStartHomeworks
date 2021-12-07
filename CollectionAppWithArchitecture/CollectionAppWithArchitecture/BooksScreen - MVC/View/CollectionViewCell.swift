@@ -28,29 +28,34 @@ final class CollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .systemBlue
-        configureViews()
+        self.configureViews()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setNameBook(name: String) {
+    func setContentOnView(book: Book) {
+        self.setImageBook(image: book.image)
+        self.setNameBook(name: book.name)
+    }
+    
+    private func setNameBook(name: String) {
         self.nameLabel.text = name
     }
     
-    func setImageBook(image: String) {
+    private func setImageBook(image: String) {
         self.imageBook.image = UIImage(named: image)
     }
     
     private func configureViews() {
         self.addSubview(imageBook)
         self.addSubview(nameLabel)
-        setupLayoutImage()
-        setupLayoutName()
+        self.setupLayoutImage()
+        self.setupLayoutName()
     }
     
-    func setupLayoutImage() {
+    private func setupLayoutImage() {
         imageBook.contentMode = .scaleAspectFit
         NSLayoutConstraint.activate([
             imageBook.centerYAnchor.constraint(equalTo: self.centerYAnchor),
@@ -59,7 +64,7 @@ final class CollectionViewCell: UICollectionViewCell {
         ])
     }
     
-    func setupLayoutName() {
+    private func setupLayoutName() {
         NSLayoutConstraint.activate([
             nameLabel.leadingAnchor.constraint(equalTo: imageBook.trailingAnchor, constant: Metrics.indentForNameCell),
             nameLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor)
