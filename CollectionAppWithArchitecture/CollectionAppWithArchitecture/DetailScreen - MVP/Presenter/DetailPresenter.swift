@@ -26,7 +26,11 @@ final class DetailPresenter {
     
     private func setContentOnView() {
         guard let book = book else { return }
-        self.detailView?.setContent(book: book)
+        let presentationData = PresentationData(
+            image: book.image,
+            desctiption: "Книга - \(book.name). Автор: \(book.author). Жанр: \(book.genre)."
+        )
+        detailView?.setContentOnView(book: presentationData)
     }
     
     private func setHandlers() {

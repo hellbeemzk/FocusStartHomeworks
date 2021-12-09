@@ -50,8 +50,8 @@ final class DetailView: UIView {
         self.setupLayoutButton()
     }
     
-    func setContent(book: Book) { 
-        self.setDescriptionBook(desc: "Книга - \(book.name). Автор: \(book.author). Жанр: \(book.genre).")
+    func setContentOnView(book: PresentationData) {
+        self.setDescriptionBook(desc: book.desctiption)
         self.setImageBook(image: book.image)
     }
     

@@ -22,6 +22,7 @@
 		B5463404275754C00079DAC6 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5463403275754C00079DAC6 /* ModalViewController.swift */; };
 		B5463406275754F10079DAC6 /* ModalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5463405275754F10079DAC6 /* ModalViewModel.swift */; };
 		B598EA7E275FD14D00A022E1 /* ModelBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598EA7D275FD14D00A022E1 /* ModelBook.swift */; };
+		B5BE39B22761F0F700371476 /* PresentationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5BE39B12761F0F700371476 /* PresentationData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B5463403275754C00079DAC6 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		B5463405275754F10079DAC6 /* ModalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewModel.swift; sourceTree = "<group>"; };
 		B598EA7D275FD14D00A022E1 /* ModelBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBook.swift; sourceTree = "<group>"; };
+		B5BE39B12761F0F700371476 /* PresentationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		B546340C275755BD0079DAC6 /* DetailScreen - MVP */ = {
 			isa = PBXGroup;
 			children = (
+				B5BE39B32761F10500371476 /* Model */,
 				B546340A275755840079DAC6 /* View */,
 				B546340B275755AB0079DAC6 /* Presenter */,
 			);
@@ -188,6 +191,14 @@
 				B54633F9275752A60079DAC6 /* Metrics.swift */,
 			);
 			path = Metrics;
+			sourceTree = "<group>";
+		};
+		B5BE39B32761F10500371476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE39B12761F0F700371476 /* PresentationData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B54633E5275751010079DAC6 /* BooksViewController.swift in Sources */,
+				B5BE39B22761F0F700371476 /* PresentationData.swift in Sources */,
 				B598EA7E275FD14D00A022E1 /* ModelBook.swift in Sources */,
 				B5463400275753C90079DAC6 /* DetailView.swift in Sources */,
 				B54633FA275752A60079DAC6 /* Metrics.swift in Sources */,
