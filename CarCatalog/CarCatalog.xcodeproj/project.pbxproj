@@ -22,6 +22,11 @@
 		B557D2CD276A99E9002EECE1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2CC276A99E9002EECE1 /* TableViewCell.swift */; };
 		B557D2CF276A9A20002EECE1 /* FirstScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2CE276A9A20002EECE1 /* FirstScreenPresenter.swift */; };
 		B557D2D1276A9A36002EECE1 /* FirstRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2D0276A9A36002EECE1 /* FirstRouter.swift */; };
+		B557D2D3276A9A79002EECE1 /* SecondScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2D2276A9A79002EECE1 /* SecondScreenVC.swift */; };
+		B557D2D5276A9A9B002EECE1 /* SecondScreenVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2D4276A9A9B002EECE1 /* SecondScreenVIew.swift */; };
+		B557D2D8276A9B00002EECE1 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2D7276A9B00002EECE1 /* SecondTableViewCell.swift */; };
+		B557D2DA276A9B27002EECE1 /* SecondScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2D9276A9B27002EECE1 /* SecondScreenPresenter.swift */; };
+		B557D2DC276A9B5F002EECE1 /* SecondScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2DB276A9B5F002EECE1 /* SecondScreenAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		B557D2CC276A99E9002EECE1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		B557D2CE276A9A20002EECE1 /* FirstScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenPresenter.swift; sourceTree = "<group>"; };
 		B557D2D0276A9A36002EECE1 /* FirstRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRouter.swift; sourceTree = "<group>"; };
+		B557D2D2276A9A79002EECE1 /* SecondScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVC.swift; sourceTree = "<group>"; };
+		B557D2D4276A9A9B002EECE1 /* SecondScreenVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenVIew.swift; sourceTree = "<group>"; };
+		B557D2D7276A9B00002EECE1 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		B557D2D9276A9B27002EECE1 /* SecondScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenPresenter.swift; sourceTree = "<group>"; };
+		B557D2DB276A9B5F002EECE1 /* SecondScreenAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,7 @@
 			children = (
 				B557D2BB276A978E002EECE1 /* Application */,
 				B557D2CB276A99C2002EECE1 /* FirstScreen */,
+				B557D2D6276A9AAF002EECE1 /* SecondScreen */,
 				B557D2C6276A98E8002EECE1 /* Model */,
 				B557D2B0276A96B8002EECE1 /* Assets.xcassets */,
 				B557D2B2276A96B8002EECE1 /* LaunchScreen.storyboard */,
@@ -116,6 +127,18 @@
 				B557D2D0276A9A36002EECE1 /* FirstRouter.swift */,
 			);
 			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		B557D2D6276A9AAF002EECE1 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B557D2DB276A9B5F002EECE1 /* SecondScreenAssembly.swift */,
+				B557D2D2276A9A79002EECE1 /* SecondScreenVC.swift */,
+				B557D2D4276A9A9B002EECE1 /* SecondScreenVIew.swift */,
+				B557D2D7276A9B00002EECE1 /* SecondTableViewCell.swift */,
+				B557D2D9276A9B27002EECE1 /* SecondScreenPresenter.swift */,
+			);
+			path = SecondScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +214,16 @@
 				B557D2D1276A9A36002EECE1 /* FirstRouter.swift in Sources */,
 				B557D2C5276A9887002EECE1 /* ModelCar.swift in Sources */,
 				B557D2CF276A9A20002EECE1 /* FirstScreenPresenter.swift in Sources */,
+				B557D2D8276A9B00002EECE1 /* SecondTableViewCell.swift in Sources */,
 				B557D2AC276A96B7002EECE1 /* FirstScreenVC.swift in Sources */,
 				B557D2A8276A96B7002EECE1 /* AppDelegate.swift in Sources */,
+				B557D2DA276A9B27002EECE1 /* SecondScreenPresenter.swift in Sources */,
 				B557D2CA276A998D002EECE1 /* FirstScreenView.swift in Sources */,
+				B557D2D3276A9A79002EECE1 /* SecondScreenVC.swift in Sources */,
+				B557D2DC276A9B5F002EECE1 /* SecondScreenAssembly.swift in Sources */,
 				B557D2C8276A993A002EECE1 /* FirstScreenAssembly.swift in Sources */,
 				B557D2BF276A9816002EECE1 /* Cars.swift in Sources */,
+				B557D2D5276A9A9B002EECE1 /* SecondScreenVIew.swift in Sources */,
 				B557D2BD276A97E6002EECE1 /* Car.swift in Sources */,
 				B557D2AA276A96B7002EECE1 /* SceneDelegate.swift in Sources */,
 				B557D2CD276A99E9002EECE1 /* TableViewCell.swift in Sources */,
