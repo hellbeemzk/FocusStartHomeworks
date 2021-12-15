@@ -12,6 +12,11 @@
 		B557D2AC276A96B7002EECE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2AB276A96B7002EECE1 /* ViewController.swift */; };
 		B557D2B1276A96B8002EECE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B557D2B0276A96B8002EECE1 /* Assets.xcassets */; };
 		B557D2B4276A96B8002EECE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B557D2B2276A96B8002EECE1 /* LaunchScreen.storyboard */; };
+		B557D2BD276A97E6002EECE1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2BC276A97E6002EECE1 /* Car.swift */; };
+		B557D2BF276A9816002EECE1 /* Cars.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2BE276A9816002EECE1 /* Cars.swift */; };
+		B557D2C1276A983A002EECE1 /* ModelManufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2C0276A983A002EECE1 /* ModelManufacturer.swift */; };
+		B557D2C3276A986E002EECE1 /* ModelBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2C2276A986E002EECE1 /* ModelBody.swift */; };
+		B557D2C5276A9887002EECE1 /* ModelCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B557D2C4276A9887002EECE1 /* ModelCar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		B557D2B0276A96B8002EECE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B557D2B3276A96B8002EECE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B557D2B5276A96B8002EECE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B557D2BC276A97E6002EECE1 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		B557D2BE276A9816002EECE1 /* Cars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cars.swift; sourceTree = "<group>"; };
+		B557D2C0276A983A002EECE1 /* ModelManufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManufacturer.swift; sourceTree = "<group>"; };
+		B557D2C2276A986E002EECE1 /* ModelBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBody.swift; sourceTree = "<group>"; };
+		B557D2C4276A9887002EECE1 /* ModelCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,35 @@
 		B557D2A6276A96B7002EECE1 /* CarCatalog */ = {
 			isa = PBXGroup;
 			children = (
-				B557D2A7276A96B7002EECE1 /* AppDelegate.swift */,
-				B557D2A9276A96B7002EECE1 /* SceneDelegate.swift */,
+				B557D2BB276A978E002EECE1 /* Application */,
 				B557D2AB276A96B7002EECE1 /* ViewController.swift */,
+				B557D2C6276A98E8002EECE1 /* Model */,
 				B557D2B0276A96B8002EECE1 /* Assets.xcassets */,
 				B557D2B2276A96B8002EECE1 /* LaunchScreen.storyboard */,
 				B557D2B5276A96B8002EECE1 /* Info.plist */,
 			);
 			path = CarCatalog;
+			sourceTree = "<group>";
+		};
+		B557D2BB276A978E002EECE1 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B557D2A7276A96B7002EECE1 /* AppDelegate.swift */,
+				B557D2A9276A96B7002EECE1 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B557D2C6276A98E8002EECE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B557D2BC276A97E6002EECE1 /* Car.swift */,
+				B557D2BE276A9816002EECE1 /* Cars.swift */,
+				B557D2C0276A983A002EECE1 /* ModelManufacturer.swift */,
+				B557D2C2276A986E002EECE1 /* ModelBody.swift */,
+				B557D2C4276A9887002EECE1 /* ModelCar.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,9 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B557D2C5276A9887002EECE1 /* ModelCar.swift in Sources */,
 				B557D2AC276A96B7002EECE1 /* ViewController.swift in Sources */,
 				B557D2A8276A96B7002EECE1 /* AppDelegate.swift in Sources */,
+				B557D2BF276A9816002EECE1 /* Cars.swift in Sources */,
+				B557D2BD276A97E6002EECE1 /* Car.swift in Sources */,
 				B557D2AA276A96B7002EECE1 /* SceneDelegate.swift in Sources */,
+				B557D2C1276A983A002EECE1 /* ModelManufacturer.swift in Sources */,
+				B557D2C3276A986E002EECE1 /* ModelBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
