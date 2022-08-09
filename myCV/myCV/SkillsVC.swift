@@ -93,13 +93,7 @@ private extension SkillsVC {
     
     @objc
     func switchDidChanged(_ sender: UISwitch) {
-        if (sender.isOn == true) {
-            skillsText.text = Constants.skillsDescription
-            avatarImage.image = UIImage(named: "ava6")
-        } else {
-            skillsText.text = Constants.skillsDescriptionJoke
-            avatarImage.image = UIImage(named: "vrun2")
-        }
+        self.switchContent()
     }
     
     func setBackgroundImage() {
