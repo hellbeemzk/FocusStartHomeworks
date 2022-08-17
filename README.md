@@ -9,4 +9,4 @@
     - Первый экран на основе **MVC**
     - Второй экран на основе **MVP**
     - Третий экран на основе **MVVM**
- 6. Реализовать приложение на основе **MVP с Router и AssemblyModuleBuilder** по [дизайну] (https://www.figma.com/file/k7h9OwMvuohqfLneAhah5A/Homework?node-id=0%3A1)  
+ 6. Реализовать приложение на основе **MVP с Router и AssemblyModuleBuilder** по [дизайну](https://www.figma.com/file/k7h9OwMvuohqfLneAhah5A/Homework?node-id=0%3A1)  
