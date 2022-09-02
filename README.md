@@ -5,7 +5,7 @@
 2. Разработать приложение [ThreadSafeArray](https://github.com/hellbeemzk/FocusStartHomeworks/tree/master/ThreadSafeArray), реализующее потокобезопасный массив, обеспечивающий корректное изменение/получение хранимых данных.
 3. Разработать приложение [myCV](https://github.com/hellbeemzk/FocusStartHomeworks/tree/master/myCV)-визитку CV о себе, состоящее из трех экранов.
 4. Разработать приложение [CollectionApp](https://github.com/hellbeemzk/FocusStartHomeworks/tree/master/CollectionApp) на основе UIColectionView с двумя дополнительными экранами детальной информацией, реализовать навигацию на основе UINavigationController.
-5. Мобифицировать приложение  [CollectionAppWithArchitecture](https://github.com/hellbeemzk/FocusStartHomeworks/tree/master/CollectionAppWithArchitecture) из ДЗ №4, по возможности придерживаясь принципов **SOLID** : 
+5. Модифицировать приложение  [CollectionAppWithArchitecture](https://github.com/hellbeemzk/FocusStartHomeworks/tree/master/CollectionAppWithArchitecture) из ДЗ №4, по возможности придерживаясь принципов **SOLID** : 
     - Первый экран на основе **MVC**
     - Второй экран на основе **MVP**
     - Третий экран на основе **MVVM**
